@@ -1,0 +1,12 @@
+.Section {
+  padding: 95px 0;
+
+  &.rounded {
+    padding-top: 250px;
+    margin-top:-110px;
+    border-top-left-radius: 75% 10%;
+    border-top-right-radius: 75% 10%;
+
+    @media (min-width:768px) { margin-top: -60px }
+  }
+}

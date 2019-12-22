@@ -1,0 +1,84 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_fonts.scss';
+
+.DashboardHeader {
+  text-align: center;
+  padding: 100px 0 75px;
+
+  button {
+    color: $coralPink
+  }
+}
+
+.DashboardContent {
+  padding-bottom: 10px;
+  padding-top: 120px !important;
+  margin: auto;
+  margin-top: 0px !important;
+  max-width: 768px;
+  @media (max-width: 576px) {
+    padding-top: 90px !important;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .noChore {
+    text-align: center
+  }
+}
+
+.centerVertical {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  font-size: 18px;
+  font-weight: 700;
+  color: $primaryTextColor;
+  font-family: $headerFontFamily;
+  padding: 10px;
+}
+
+// TODO: This is how the modal should work globally!!!
+.PaymentSuccessModal {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  section {
+    width: 100% !important;
+    position: relative !important;
+    top: initial !important;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 75px 25px;
+    box-sizing: border-box;
+  }
+
+  .text {
+    font-family: $fontFamily;
+    font-size: 36px;
+    ;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.28;
+    letter-spacing: normal;
+    text-align: center;
+    color: $darkBlueGrey;
+  }
+}

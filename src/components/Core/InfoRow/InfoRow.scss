@@ -1,0 +1,174 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_fonts.scss';
+
+%summaryText {
+  font-family: $fontFamily;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: 0.5px;
+  text-align: left;
+  margin: 0;
+}
+
+.InfoRow {
+  background: transparent;
+  padding: 5px 10px;
+  // border-radius: 8px;
+  // margin-top: 4px;
+  // box-shadow: 0 10px 20px 0 rgba(34, 78, 95, 0.05);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  &:hover {
+    box-shadow: 0px 7px 12px rgba(34, 78, 95, 0.15);
+  }
+}
+
+.InfoRowItem {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    &.parentTransaction {
+      height: auto;
+      flex-direction: column;
+    }
+  }
+
+  .flexRow {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    .avatarCol, .actionCol {
+      padding: 0;
+    }
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: $boxShadowMiddle;
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    @media (max-width: 767px) {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  .actions {
+    text-align: right;
+
+    &.left { text-align: left }
+  }
+
+  .name {
+    @extend %summaryText;
+    color: #202d4a;
+    text-transform: capitalize;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: fit-content;
+    height: auto;
+    font-size: 14px;
+  }
+
+  .category {
+    @extend %summaryText;
+    font-size: 14px;
+    color: #8d95a6;
+    text-transform: capitalize;
+  }
+
+  .status {
+    @extend %summaryText;
+    ;
+    color: $niceBlue;
+    text-transform: capitalize;
+  }
+
+  .date {
+    @extend %summaryText;
+    font-size: 14px;
+    color: #8d95a6;
+  }
+
+  .amount {
+    @extend %summaryText;
+    font-size: 16px;
+    line-height: 1.56;
+    letter-spacing: 0.6;
+    color: #202d4a;
+  }
+
+  .success { color: $success }
+  .warn { color: $warn }
+  .info { color: $info }
+
+  .button {
+    background: none;
+    box-shadow: none;
+  }
+  .payButton {
+    width: fit-content !important;
+    height: auto !important;
+    padding: 0px 10px !important;
+    font-size: 14px !important;
+    color: #5d6b81 !important;
+    margin: 0!important;
+  
+    @media (max-width: 767px) {
+      margin-top: 5px !important;
+      margin-bottom: 5px !important;
+    }
+  
+    &:hover {
+      color: $primaryTextColor!important;
+    }
+  }
+
+  .childButton {
+    background: none;
+    box-shadow: none;
+    text-align: right;
+  }
+
+  .deleteChoreButton {
+    svg > g { stroke: $blueGrey }
+  }
+
+  .mobileChoreActions {
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 3px;
+
+      button {
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+
+  .actions {
+    button {
+      width: auto;
+      height: auto;
+      @media (max-width: 767px) {
+        padding-left: 0!important;
+      }
+    }
+  }
+}
+
+.transactionRow {
+  height: unset;
+}

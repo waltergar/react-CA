@@ -1,0 +1,115 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_fonts.scss';
+
+.Button {
+  padding: 5px;
+  height: 50px;
+  width: 250px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 3px;
+  box-shadow: $boxShadowMiddle;
+  transition: all 150ms ease-out;
+  cursor: pointer;
+  font-family: $fontFamily;
+  background: white;
+  
+  
+  &.textOnly {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: white;
+    font-size: 24px;
+    ;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: none;
+    padding: 0;
+    margin: 20px 0;
+
+    &:hover {
+      background: transparent;
+      box-shadow: none;
+    }
+    
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &.iconOnly {
+    background: $lightGray;
+    width: 78px;
+
+    .icon {
+      margin: 0
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &.small {
+    width: 165px;
+    letter-spacing: 2px;
+  }
+
+  &.tiny {
+    width: 75px;
+    height: 45px;
+    letter-spacing: 2px;
+    padding: 5px;
+  }
+
+  &.outline {
+    background: transparent!important;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-style: solid;
+  }
+
+  &:hover {
+    transition: all 150ms ease-out;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.2);
+  }
+
+  &.primary {
+    background: $coralPink;
+    color: $white;
+
+    .icon {
+      color: $white;
+      svg > path, svg > g, svg { stroke: $white }
+    }
+  }
+
+  &.secondary {
+    background: $white;
+    color: $coralPink;
+
+    .icon {
+      color: $coralPink;
+      svg > path, svg > g, svg { stroke: $coralPink }
+    }
+  }
+
+  .icon { margin-left: 10px }
+
+  &.disabled {
+    &:hover { box-shadow: inherit }
+    cursor: not-allowed;
+    opacity: .8;
+  }
+
+  &.nocaps {
+    padding: 25px 30px;
+    font-size: 17px;
+    text-transform: none;
+  }
+}

@@ -1,0 +1,117 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_fonts.scss';
+
+.KeyValuePair {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  .key {
+    display: inline-block;
+    width: 65%;
+    font-family: $fontFamily;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+    color: $primaryTextColor;
+    text-transform: capitalize;
+  }
+
+  .value {
+    display: inline-block;
+    align-items: center;
+    width: 35%;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $primaryTextColor;
+    overflow-wrap: break-word;
+    text-transform: capitalize;
+  
+    img {
+      width: 24px;
+      height: 24px;
+
+      @media (min-width: 768px) {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+
+  .avatar {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: $boxShadowMiddle;
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+  }
+}
+
+.vKeyValuePair {
+  padding: 15px 0;
+  .vKey {
+    font-family: $fontFamily;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+    color: $primaryTextColor;
+    text-transform: capitalize;
+  }
+
+  .vValue {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $primaryTextColor;
+    overflow-wrap: break-word;
+    text-transform: capitalize;
+  
+    img {
+      width: 24px;
+      height: 24px;
+
+      @media (min-width: 768px) {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+
+  .vAvatar {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: $boxShadowMiddle;
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+  }
+}

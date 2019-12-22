@@ -1,0 +1,49 @@
+@import '../../../styles/_colors.scss';
+
+.TransactionDetailsModal {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  .header {
+    margin: 25px 0 50px;
+    text-align: center;
+
+    .amount {
+      color: $coralPink;
+      font-size: 36px;
+      ;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    section {
+      padding: 0;
+      transform: scale(.9);
+      margin: 100px 0;
+    }
+  }
+
+  @media (max-width: 667px) {
+    section {
+      padding: 0;
+      transform: scale(.8);
+      margin: 25px 0;
+    }
+  }
+
+  .keyValuePairs {
+    display: inline-block;
+    width: 100%;
+    overflow: scroll;
+    
+  }
+}

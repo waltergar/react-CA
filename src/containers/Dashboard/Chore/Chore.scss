@@ -1,0 +1,35 @@
+@import '../../../styles/_colors.scss';
+
+.DashboardHeader {
+  text-align: center;
+  padding: 100px 0 75px;
+
+  button {
+    color: $coralPink
+  }
+}
+
+.DashboardContent {
+  padding-bottom: 10px;
+  padding-top: 120px !important;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .noChore {
+    text-align: center
+  }
+}
+
+.centerVertical {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    h1 { margin-bottom: 0 }
+  }
+}

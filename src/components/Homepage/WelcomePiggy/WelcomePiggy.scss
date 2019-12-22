@@ -1,0 +1,70 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_fonts.scss';
+
+.WelcomeMat {
+  max-width: 100vw;
+  margin-top: 10px;
+  text-align: left;
+  background: $homepageBackgroundColor;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .section {
+    min-height: calc(100vh - 260px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 95px 0;
+
+    .childWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @media (max-width: 990px) {
+        padding-left:100px!important;
+      }
+      @media (max-width: 600px) {
+        padding: 0 30px!important;
+        align-items: center;
+        // text-align: center;
+      }
+    }
+
+    .imageWrapper{
+      padding: 0;
+    }
+
+    .mockup {
+      width: 100%;
+      height: 70vh;
+      margin-left: -70px;
+      // background-color: $lightGray;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .button {
+      color: $coralPink;
+      font-weight: 400;
+    }
+
+    p {
+      color: $primaryTextColor;
+      white-space: pre-line;
+      font-size: 44pt;
+      font-family: $headerFontFamily;
+      padding-bottom: 40px;
+      line-height: 1.3;
+      @media (max-width: 1146px) {
+        font-size: 37pt;
+      }
+      @media (max-width: 600px) {
+        font-size: 22pt;
+      }
+    }
+  }
+    
+}

@@ -1,0 +1,38 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_fonts.scss';
+
+.CreditAcademyCommunity {
+  padding-bottom: 10px;
+  padding-top: 10px !important;
+  height: 100%;
+
+  letter-spacing: .75px;
+  ;
+  line-height: 1.29;
+  text-align: center;
+  color: $blueGrey;
+  margin-top: 25px;
+
+  span {
+    display: block;
+    margin: 35px 0;
+    color: $primaryTextColor;
+    white-space: pre-wrap;
+    font-size: 21pt;
+    font-family: $headerFontFamily;
+    line-height: 1.3;
+  }
+
+  .photoSection {
+    img {
+      margin: 0;
+      padding: 0;
+      float: left;
+      width: 50%;
+
+      @media (min-width: 992px) {
+        width: 25%;
+      }
+    }
+  }
+}

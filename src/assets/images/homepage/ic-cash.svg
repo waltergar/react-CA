@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="133px" height="93px" viewBox="0 0 133 93" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon_cash</title>
+    <desc>Created with Sketch.</desc>
+    <g id="1-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="CA_Landing_V4_5-Copy" transform="translate(-669.000000, -259.000000)" stroke="#FD5C63" stroke-width="2">
+            <g id="icon_cash" transform="translate(670.000000, 260.000000)">
+                <g id="Group-7">
+                    <g id="Group-6">
+                        <g id="Group-4">
+                            <g id="Group-3">
+                                <rect id="Rectangle" x="0" y="0" width="115" height="72"></rect>
+                                <g id="Group-2">
+                                    <path d="M0,13 L0,13 C7.17970175,13 13,7.17970175 13,0" id="Path"></path>
+                                    <path d="M0,72 L0,72 C7.17970175,72 13,66.1797017 13,59" id="Path-Copy" transform="translate(6.500000, 65.500000) rotate(-90.000000) translate(-6.500000, -65.500000) "></path>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(102.000000, 0.000000)">
+                                <path d="M0,13 L0,13 C7.17970175,13 13,7.17970175 13,0" id="Path-Copy-2" transform="translate(6.500000, 6.500000) scale(-1, 1) translate(-6.500000, -6.500000) "></path>
+                                <path d="M0,72 L0,72 C7.17970175,72 13,66.1797017 13,59" id="Path-Copy-3" transform="translate(6.500000, 65.500000) scale(-1, 1) rotate(-90.000000) translate(-6.500000, -65.500000) "></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-5" transform="translate(49.000000, 12.000000)">
+                        <path d="M16.5,8 L7.5,8 C3.35786438,8 -5.07265313e-16,11.3578644 0,15.5 L0,15.5 C5.07265313e-16,19.6421356 3.35786438,23 7.5,23 L10.5,23 C14.6421356,23 18,26.3578644 18,30.5 L18,30.5 C18,34.6421356 14.6421356,38 10.5,38 L1.5,38" id="Path-2"></path>
+                        <path d="M9.5,0.266666667 L9.5,7.46666667" id="Line"></path>
+                        <path d="M9.5,38.2666667 L9.5,45.4666667" id="Line-Copy"></path>
+                    </g>
+                </g>
+                <polyline id="Shape" points="123 10 123 82 8 82"></polyline>
+                <polyline id="Shape-Copy" points="131 19 131 91 16 91"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

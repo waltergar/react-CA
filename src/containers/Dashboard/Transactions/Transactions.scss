@@ -1,0 +1,68 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_fonts.scss';
+
+.button {
+  color: $primaryTextColor!important;
+  font-size: 14px!important;
+  text-align: left!important;
+  width: fit-content;
+  padding: 0 10px!important;
+}
+
+.buttonBig {
+  font-family: $headerFontFamily;
+  font-size: 18px!important;
+}
+
+.marginLeft {
+  margin-left: 25px!important;
+}
+
+.generalButton {
+  color: #8d95a6!important;
+}
+.selectedButton {
+  color: $primaryTextColor!important;
+}
+
+.infoRow {
+  margin-top: 0px;
+  border-width: 0px;
+  border-radius: 0px;
+  background: transparent;
+  box-shadow: none;
+}
+.actionButton {
+  width: fit-content !important;
+  height: auto !important;
+  padding: 0px 10px !important;
+  font-size: 14px !important;
+  color: #5d6b81 !important;
+  margin: 0!important;
+
+  @media (max-width: 767px) {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+
+  &:hover {
+    color: $primaryTextColor!important;
+  }
+}
+
+.noResult {
+  font-size: 14px;
+  font-weight: 700;
+  color: $primaryTextColor;
+  padding: 10px 15px;
+}
+
+.isSelected {
+  border-bottom: 2px solid $primaryTextColor!important;
+  border-radius: 0;
+}
+
+.noSelected {
+  border-radius: 0;
+  border-bottom: none;
+}

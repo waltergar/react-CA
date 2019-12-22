@@ -1,0 +1,62 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_fonts.scss';
+
+.Pagination {
+  margin: 50px 0;
+
+  .links {
+    margin: 0 auto;
+    text-align: center;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    li {
+      margin: 0 15px;
+      font-family: $fontFamily;
+      font-size: 14px;
+      ;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      text-align: center;
+      color: $darkBlueGrey;
+
+      &.active { font-weight: 600 }
+    }
+
+    a {
+      color: inherit;
+      font: inherit;
+
+      &:hover {
+        text-decoration: none;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .selection {
+    background: none;
+    border: none;
+    font-family: $fontFamily;
+    font-size: 14px;
+    ;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $darkBlueGrey;
+
+    @media (max-width: 767px) {
+      float: right;
+    }
+  }
+}

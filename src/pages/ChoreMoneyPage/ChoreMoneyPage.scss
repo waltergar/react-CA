@@ -1,0 +1,18 @@
+@import '../../styles/_colors.scss';
+
+.ChoreMoneyPage {
+  height: 100%;
+  min-height: calc(100vh - 300px);
+  background: white;
+
+  .header {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+      
+    @media (min-width: 768px) {
+      font-size: 36px;
+    }
+  }
+}

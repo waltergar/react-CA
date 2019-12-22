@@ -1,0 +1,13 @@
+@font-face{
+    font-family:wes-fy;
+    font-style:normal;
+    font-weight:900;
+    src:url(../assets/fonts/wesfy-black_s-webfont.woff2) format("woff2");
+}
+
+@font-face{
+    font-family:pwp-ocr;
+    font-style:normal;
+    font-weight:400;
+    src:url(../assets/fonts/ocrb-webfont.woff) format("woff")
+}

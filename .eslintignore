@@ -1,0 +1,8 @@
+build/*
+config/*
+node_modules/*
+scripts/*
+public/*
+src/registerServiceWorker.js
+coverage/*
+src/assets/*

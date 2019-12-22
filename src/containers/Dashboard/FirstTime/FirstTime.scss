@@ -1,0 +1,66 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_fonts.scss';
+
+.DashboardHeader {
+  text-align: center;
+  padding: 175px 0 125px;
+
+  h1 {
+    font-family: $fontFamily;
+    font-size: 56px;
+    ;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    color: $niceBlue;
+  }
+
+  h2 {
+    font-family: $fontFamily;
+    font-size: 24px;
+    ;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    color: $darkBlueGrey;
+  }
+
+  .cardAndStripes {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: -135px;
+
+    .virtualCard {
+      z-index: 100;
+    }
+  }
+
+  .parentRole { text-transform: capitalize }
+}
+
+.DashboardContent {
+  padding-bottom: 10px;
+  padding-top: 120px !important;
+
+  text-align: center;
+
+  .button {
+    // width: 95%;
+    margin: -200px 0 50px;
+
+    @media (min-width: 768px) {
+      // width: 250px;
+      margin: 0;
+    }
+  }
+}
+
+.centerVertical {
+  display: flex;
+  align-items: center;
+}

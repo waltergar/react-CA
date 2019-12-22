@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="296" height="225" viewBox="0 0 296 225">
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#FD5C63" stroke-linecap="square" d="M0 172l41-22"/>
+        <path stroke="#FD5C63" stroke-linecap="square" stroke-width="4" d="M10 85l36-19M243 105l50-26"/>
+        <path stroke="#FD5C63" stroke-linecap="square" d="M191 195l69-38"/>
+        <path fill="#FFF" stroke="#5D6B81" stroke-width="3" d="M230 54v103.72a8 8 0 0 1-8 8H73a8 8 0 0 1-8-8v-96M172.026 49H58V37h178v12"/>
+        <path stroke="#FD5C63" stroke-width="3" d="M148.16 176v19.252L120 223.412"/>
+        <path stroke="#5D6B81" stroke-width="3" d="M175.983 222.983L153 200"/>
+        <path stroke="#FD5C63" stroke-linecap="square" stroke-width="3" d="M145.5 14.5v13"/>
+        <text fill="#FD5C63" font-family="WorkSans-Light, Work Sans" font-size="64" font-weight="300" letter-spacing="1.778" transform="translate(0 1)">
+            <tspan x="79" y="121">A</tspan>
+        </text>
+        <text fill="#FD5C63" font-family="WorkSans-Light, Work Sans" font-size="64" font-weight="300" letter-spacing="1.778" transform="translate(0 1)">
+            <tspan x="128" y="139">B</tspan>
+        </text>
+        <text fill="#FD5C63" font-family="WorkSans-Light, Work Sans" font-size="64" font-weight="300" letter-spacing="1.778" transform="translate(0 1)">
+            <tspan x="174" y="120">C</tspan>
+        </text>
+        <path stroke="#FD5C63" stroke-linecap="square" d="M205 21l39-20"/>
+    </g>
+</svg>

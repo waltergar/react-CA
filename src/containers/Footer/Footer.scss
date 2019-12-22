@@ -1,0 +1,55 @@
+@import '../../styles/_colors.scss';
+@import '../../styles/_fonts.scss';
+
+.Footer {
+  padding: 10px 0;
+  box-shadow: 0 0px 25px 0 rgba(10, 18, 20, .2);
+  // position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .center { text-align: center }
+
+  .preFooter {
+    font-size: 12px;
+    color: $darkPaleGrey;
+  }
+
+  .postFooter {
+    font-size: 14px;
+    color: $white;
+    line-height: 20px;
+    white-space: pre-line;
+  }
+
+  a {
+    color: $white;
+    text-decoration: underline;
+    margin: 0 10px;
+    font-size: 12px;
+
+    &:hover { opacity: .5 }
+  }
+
+  &.mobile {
+    position: relative;
+    .postFooter { margin-right: 0 }
+  }
+
+  .sitemap {
+    display: none;
+    padding: 20px 0;
+    a {
+      font-size: 12px;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0;
+    }
+    p {
+      font-size: 12px;
+      color: $white;
+      margin: 0 0 10px;
+    }
+  }
+}

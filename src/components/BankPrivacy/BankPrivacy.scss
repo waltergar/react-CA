@@ -1,0 +1,133 @@
+@import '../../styles/_colors.scss';
+
+.PrivacyContent {
+  padding: 100px 0;
+  background: white;
+
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    @media (min-width: 768px) { font-size: 36px; }
+  }
+
+  .bankPolicy {
+    padding: 5px;
+    @media (min-width: 768px) { padding: 25px; }
+
+    :global {
+      .mui-row {
+        padding: 10px;
+        @media (min-width: 768px) { display: flex; }
+      }
+    }
+    
+    h3 {
+      color: $darkBlueGrey;
+    }
+    
+    p {
+      margin: 0;
+      color: $blueGrey;
+      font-size: 14px;
+      @media (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+
+    .key {
+      padding: 10px;
+      color: white;
+      font-size: 16px;
+      background-color: $lightGray;
+    }
+    .value {
+      padding: 10px;
+      border: 1px solid $lighterGray;
+      color: $blueGrey;
+
+      &.fact {
+        border-bottom: 1px solid $lightGray;
+        text-transform: uppercase;
+              }
+    }
+
+    .reasonTable {
+      width: 101%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      margin-left: -5px;
+        
+      thead {
+        visibility: collapse;
+        display: none;
+        background: $lightGray;
+        @media (min-width: 768px) {
+          visibility: visible;
+          display: table-header-group;
+        }
+      }
+      
+      tr {
+        border: 1px solid $lightGray;
+        padding: 5px;
+        display: block;
+        @media (min-width: 768px) {
+          display: table-row;
+          border-bottom-width: 1px;
+          margin-bottom: 0;
+        }
+      }
+      
+      th {
+        padding: 10px;
+        color: white;
+        font-size: 16px;
+        ;
+        text-align: center;
+        border-right: 1px solid white;
+        &:last-child {
+          border-right: 0;
+        }
+      }
+        
+      td {
+        display: block;
+        padding: 10px;
+        text-align: right;
+        font-size: 14px;
+        ;
+        color: $blueGrey;
+        border: none;
+        
+        &:last-child {
+          border-right: 0;
+        }
+          
+        @media (min-width: 768px) {
+          display: table-cell;
+          text-align: left;
+          font-size: 16px;
+          border-right: 1px solid $lightGray;
+        }
+      }
+      
+      td:before {
+        content: attr(data-label);
+        float: left;
+        text-align: left;
+        font-size: 14px;
+        color: $blueGrey;
+        ;
+        @media (min-width: 768px) {
+          content: "";
+          display: none;
+        }
+      }
+  
+      p {
+        margin-bottom: 0;
+        color: $blueGrey;
+      }
+    }
+  }
+}

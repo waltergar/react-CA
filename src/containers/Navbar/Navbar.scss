@@ -1,0 +1,161 @@
+@import '../../styles/_colors.scss';
+@import '../../styles/_fonts.scss';
+
+.Navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 10px;
+  align-self: center;
+  z-index: 1001;
+  box-sizing: border-box;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  height: 70px;
+
+  @media (min-width: 768px) {
+    padding: 20px 20px;
+  }
+
+  .linkGroup {
+    display: flex;
+    vertical-align: middle;
+    flex-direction: row;
+    z-index: 1002;
+
+    &.right {
+      justify-content: flex-end;
+      align-items: center;
+
+      svg {
+        fill: white;
+        g { stroke: white }
+        text { fill: white }
+
+        &:nth-child(2) {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      :global {
+        .active {
+          border-bottom: 1px solid;
+        }
+      }
+    }
+
+    a:not(:last-child) {
+      margin-right: 5px;
+
+      @media (min-width: 768px) { margin-right: 25px }
+    }
+
+    .signup {
+      line-height: 42px;
+    }
+
+    .icon {
+      width: 36px;
+      @media (min-width: 768px) { width: 40px; }
+    }
+  }
+
+  .button {
+    background: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    height: 40px;
+    width: 20px;
+  }
+
+  a {
+    font-family: $fontFamily;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: $white;
+    font-weight: normal;
+    opacity: 1;
+    text-decoration: none;
+    z-index: 1002;
+    height: 40px;
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &.whiteNavbar {
+    background-color: white;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    .linkGroup {
+      svg {
+        stroke: $coralPink;
+        g { stroke: $coralPink }
+      }
+
+      &.right {
+        svg {
+          g { stroke: $coralPink }
+          text { fill: $coralPink }
+        }
+
+        a { color: $coralPink }
+
+        :global {
+          .active {
+            border-bottom: 1px solid;
+          }
+        }
+      }
+    }
+
+    &.grayNavbar { background: $white }
+  }
+
+  .homeLink {
+    cursor: pointer;
+    svg {
+      width: 64px;
+      height: 48px;
+    }
+  }
+}
+
+.MainMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: $blueGrey;
+  opacity: 0.98;
+  color: white;
+  z-index: 1000;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (max-height: 667px) and (max-width: 450px) {
+      max-height: 70vh;
+      overflow: scroll;
+    }
+
+    button {
+      font-size: 36px !important;
+      width: 350px !important;
+    }
+  }
+}

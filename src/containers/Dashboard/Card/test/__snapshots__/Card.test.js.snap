@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ChildCard /> renders like a Mr.Softee on a sunny NYC day 1`] = `
+<div
+  className="Card"
+>
+  <div
+    className="noResult"
+  >
+    No cards
+  </div>
+</div>
+`;
+
+exports[`<ParentCard /> renders like a beautiful baked apple pie 1`] = `
+<div
+  className="Card"
+>
+  <div
+    className="activateCardWrapper"
+  >
+    <div
+      className="cardContainer"
+    >
+      <div
+        className="activateCard"
+      >
+        <div
+          className="cardTitle"
+        >
+          Personal Information
+        </div>
+        <div
+          className="cardContent"
+        >
+          To activate your account we require some personal information.
+        </div>
+        <Button
+          className="activeButton"
+          disabled={false}
+          icon={null}
+          iconOnly={false}
+          middle={true}
+          nocaps={false}
+          onClick={[Function]}
+          outline={false}
+          primary={true}
+          secondary={false}
+          small={false}
+          text="ACTIVATE"
+          textOnly={false}
+          tiny={false}
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="centerVertical"
+  >
+    <Button
+      className="buttonBig"
+      disabled={false}
+      icon={null}
+      iconOnly={false}
+      middle={true}
+      nocaps={false}
+      onClick={null}
+      outline={false}
+      primary={false}
+      secondary={false}
+      small={false}
+      text="My Cards"
+      textOnly={true}
+      tiny={false}
+    />
+    <div
+      align="right"
+      className="buttonGroup"
+    />
+  </div>
+  <div
+    className="noResult"
+  >
+    No cards
+  </div>
+  <Connect(Connect(Connect(LinkPlaidModal)))
+    onReload={[Function]}
+  />
+</div>
+`;

@@ -1,0 +1,177 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_fonts.scss';
+
+.CardDetailsModal {
+  .card { margin: 0px auto 40px }
+  .buttonGroup {
+    display: flex;
+    align-items: center;
+
+    .button {
+      color: $white;
+      background-color: $coralPink;
+      height: unset;
+      span {
+        svg > path { stroke: #fff }
+      }
+    }
+
+    .pay {
+      position: relative;
+      color: $coralPink;
+      span {
+        position: absolute;
+        right: 20px;
+        svg > path { stroke: $coralPink }
+      }
+    }
+  }
+
+  .iconButton {
+    background: none;
+    box-shadow: none;
+    height: auto;
+  }
+
+  .deleteChoreButton {
+    svg > g { stroke: $blueGrey }
+  }
+  .backButton {
+    width: fit-content;
+    padding-right: 20px;
+    svg > g { stroke: $primaryTextColor }
+  }
+
+  .colorDot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+  }
+
+  @media (max-width: 768px) {
+    section {
+      padding: 0;
+      transform: scale(.9);
+      margin: 100px 0;
+    }
+  }
+
+  @media (max-width: 667px) {
+    section {
+      padding: 0;
+      margin: 25px 0;
+      transform: scale(1);
+    }
+  }
+
+  .mobileContent {
+    margin-top: 50px;
+  }
+
+  .keyValuePairs {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    @media (min-width: 768px) {
+      max-height: calc(100vh - 500px);
+    }
+  }
+
+  .cardWrapper {
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #8d95a6!important;
+  }
+
+  .headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .headerTitle {
+    color: #202d4a;
+    font-family: $headerFontFamily;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .bigButton {
+    font-size: 18px!important;
+    font-family: $headerFontFamily;
+    width: fit-content;
+    text-align: left!important;
+    color: $primaryTextColor!important;
+    padding: 0 7px!important;
+    @media (max-width: 667px) {
+      font-size: 15px!important;
+      padding: 0 5px!important;
+    }
+  }
+
+  .transactionButton {
+    font-size: 16px!important;
+    width: fit-content;
+    text-align: left!important;
+    color: #8d95a6!important;
+    @media (max-width: 667px) {
+      font-size: 14px!important;
+    }
+  }
+
+  .date {
+    font-size: 14px;
+    color: #8d95a6;
+  }
+
+  .name {
+    font-size: 14px;
+    color: $primaryTextColor;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 0 5px;
+  }
+
+  .amount {
+    font-size: 16px;
+    line-height: 1.56;
+    letter-spacing: 0.6;
+    color: $primaryTextColor;
+    ;
+  }
+
+  .noResult {
+    font-size: 14px;
+    font-weight: 700;
+    color: $primaryTextColor;
+    margin-left: -8px;
+    @media (min-width: 992px) {
+      padding-left: 7px;
+      margin-left: 0px;
+    }
+  }
+
+  .isSelected {
+    border-bottom: 2px solid $primaryTextColor;
+    border-radius: 0;
+  }
+
+  .noSelected {
+    border-radius: 0;
+    border-bottom: none;
+  }
+
+  .transactionCol {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+  }
+
+  .row {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+}

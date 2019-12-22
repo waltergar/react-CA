@@ -1,0 +1,92 @@
+@import '../../styles/_colors.scss';
+
+.Dashboard {
+  background: $homepageBackgroundColor;
+  height: 100%;
+  min-height: calc(100vh - 110px);
+}
+
+.mobileWrapper {
+  @media (max-width: 575px) { max-width: 510px; margin: auto; }
+  padding-top: 100px;
+  padding-bottom: 125px;
+}
+
+.contentLeft {
+  padding: 100px 10px 125px 20px;
+  @media (max-width: 1200px) { padding: 100px 20px 0 20px!important;max-width: 960px; margin: auto; }
+  @media (min-width: 1200px) { max-width: 485px; margin: auto; }
+  @media (max-width: 1014px) { max-width: 720px; margin: auto; }
+  @media (max-width: 774px) { max-width: 485px; margin: auto; }
+}
+
+.contentRight {
+  @media (max-width: 1200px) { padding: 50px 20px 125px 20px!important }
+  @media (min-width: 1015px) { max-width: 960px; margin: auto; }
+  @media (max-width: 1014px) { max-width: 720px; margin: auto; }
+  @media (max-width: 774px) { max-width: 485px; margin: auto; }
+}
+
+.contentRightNoCard {
+  padding: 327px 2px 125px 10px;
+}
+
+.contentRightCard {
+  padding: 115px 2px 125px 10px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0px 20px 20px;
+  margin: 0 15px 0 15px!important;
+  align-items: center;
+}
+.button {
+  font-size: 16px!important;
+  width: fit-content;
+  margin: 0 20px 0 0!important;
+  text-align: left!important;
+}
+.generalButton {
+  color: #8d95a6!important;
+}
+.selectedButton {
+  color: #202d4a!important;
+}
+.newCardButton {
+  height: fit-content;
+  width: fit-content!important;
+  padding: 5px 15px;
+  background-color: #202d4a;
+  color: $white;
+  @media (max-width: 667px) {
+    font-size: 9px;
+  }
+}
+.fundingSourceButton {
+  @media (max-width: 667px) {
+    font-size: 7px;
+    padding: 3px 8px;
+  }
+}
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  .button {
+    height: auto;
+    padding: 5px 0;
+  }
+}
+.noNewCard {
+  flex-direction: row;
+}
+.isNewCard {
+  @media (max-width: 667px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+

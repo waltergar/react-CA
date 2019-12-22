@@ -1,0 +1,269 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_fonts.scss';
+
+.DashboardHeader {
+  text-align: center;
+  padding: 100px 0 0;
+
+  &.editing {
+    background-color: $blueGrey;
+    h1 { color: white }
+    p { color: white }
+  }
+}
+
+.DashboardContent {
+  padding-bottom: 100px;
+  padding-top: 25px !important;
+
+  .textbox {
+    color: $darkBlueGrey;
+    input { color: $darkBlueGrey }
+
+    &:hover {
+      color: $darkBlueGrey;
+      input { color: $darkBlueGrey !important }
+      &::placeholder { color: $darkBlueGrey !important }
+    }
+  }
+
+  .buttonGroup {
+    display: flex;
+    align: center;
+    justify-content: center;
+
+    .button {
+      margin: 0 10px
+    }
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .inputIcon {
+    position: relative;
+    margin: 0 5px 0 10px;
+    // top: 4px;
+    color: #3b485b;
+    svg > path, svg > g, svg { stroke: #3b485b }
+  }
+}
+
+.DashboardContentEditing {
+
+  background-color: #5d6b81;
+  min-height: 100vh;
+
+  .header {
+    text-align: center;
+
+    h1 { color: white}
+    p { color: white}
+  }
+
+  padding-bottom: 100px;
+  padding-top: 25px !important;
+  background-color: $blueGrey;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .okButton {
+    margin: 0 10px;
+    color: $white;
+    background-color: #fd5c63;
+  }
+
+  .inputIcon {
+    position: relative;
+    margin: 0 5px 0 10px;
+    // top: 4px;
+    color: $white;
+    svg > path, svg > g, svg { stroke: $white }
+  }
+
+  .viewField {
+    color: $white;
+  }
+}
+
+.saveButton{
+  margin-top: 10px;
+  color: $white;
+  background-color: #fd5c63;
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 300px !important;
+  }
+}
+
+.editButton {
+  margin: 0 10px;
+  color: $white;
+  background-color: #5E6B7F;
+}
+
+.editedIcon {
+  margin: 30px;
+}
+
+.viewField {
+  @media (min-width: 768px) {
+    padding: 30px;
+  }
+  padding: 15px;
+  font-family: $fontFamily;
+  border: none;
+  font-size: 16px;
+  ;
+  width: 100%;
+  background-color: inherit;
+  text-align: left;
+  line-height: 28px;
+  display: flex;
+}
+
+.viewFieldText {
+  padding-left: 28px;
+  width: 400px;
+}
+
+.viewFieldTextBoxName {
+  @media (min-width: 768px) {
+    padding-left: 28px;
+    width: 120px;
+  }
+}
+
+.viewFieldTextWithoutIcon {
+  @media (min-width: 768px) {
+    padding-left: 68px;
+    padding-right: 80px;
+  }
+}
+
+.disableIcon {
+  svg { height: 15px !important; width: 14px;}
+}
+
+.editField {
+  display: block;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.textBoxCancelButton {
+  width: 78px;
+  @media (min-width: 768px) and (max-width: 1280px) {
+    width: 159px;
+    height: 78px;
+    margin-left: 10px;
+  }
+  @media (min-width: 1280px) {
+    width: 159px;
+    height: 78px;
+    margin-left: 27px;
+  }
+  color: $white;
+  background-color: $gray;
+  // margin-top: 10px;
+}
+
+.cancelButton {
+  margin: 10px 0 0;
+  @media (min-width: 768px) {
+    margin-left: 27px;
+    width: 159px;
+    height: 78px;
+  }
+  width: 100%;
+  color: $white;
+  background-color: $gray;
+}
+
+.textbox {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    opacity: 0;
+  }
+
+  &:focus, &:hover {
+    button { opacity: 1 }
+  }
+}
+.fundingSource {
+  padding: 25px 0 0;
+  .fundingSourceContainer {
+    max-width: 700px;
+    margin: auto;
+    .headerWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      .newCardButton {
+        font-size: 10px;
+        font-weight: 700;
+        height: fit-content;
+        width: fit-content!important;
+        padding: 5px 15px;
+        background-color: $primaryTextColor;
+        color: $white;
+      }
+
+      .headerText {
+        color: $primaryTextColor;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 32px;
+      }
+
+    }
+    .fundingSourceWrapper {
+      .fundingSourceItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        padding: 5px 25px;
+        border-radius: 8px;
+        margin-top: 20px;
+        box-shadow: 0 10px 20px 0 rgba(34, 78, 95, 0.05);
+        transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+        &:hover {
+          box-shadow: 0px 7px 12px rgba(34, 78, 95, 0.15);
+        }
+        .fundingDetail {
+          color: $primaryTextColor;
+          line-height: 30px;
+          .accountName {
+            font-size: 16px;
+            font-weight: 400;
+          }
+          .bankInfo {
+            font-size: 12px;
+            font-weight: 700;
+          }
+
+        }
+        .iconButton {
+          background: none;
+          box-shadow: none;
+          height: auto;
+        }
+      
+        .deleteChoreButton {
+          svg > g { stroke: $blueGrey }
+        }
+      }
+    }
+  }
+}

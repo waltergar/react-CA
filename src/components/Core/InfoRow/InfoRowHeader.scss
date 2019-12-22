@@ -1,0 +1,22 @@
+.InfoRowHeader {
+  position: relative;
+  padding: 5px 25px;
+  border-radius: 8px;
+  background-color: rgba(93, 107, 129, 0.5);
+  box-shadow: 0 5px 20px 0 rgba(10, 18, 20, 0.05);
+  color: white;
+  font-weight: 200;
+  letter-spacing: 1px;
+
+  svg {
+    position: absolute;
+    top: 9px;
+    margin-left: 9px;
+    transform: rotate(90deg);
+    path { stroke: white }
+  }
+  
+  .ascIcon {
+    svg { transform: rotate(270deg);}
+  }
+}

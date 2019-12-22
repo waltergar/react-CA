@@ -1,0 +1,40 @@
+@import '../../../styles/_fonts.scss';
+
+.InfoModal {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  section {
+    width: 100% !important;
+    position: relative !important;
+    top: initial !important;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 75px 25px;
+    box-sizing: border-box;
+  }
+
+  .text {
+    font-family: $fontFamily;
+    font-size: 36px;
+    ;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.28;
+    letter-spacing: normal;
+    text-align: center;
+    color: #3b485b;
+  }
+}

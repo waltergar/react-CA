@@ -1,0 +1,53 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_fonts.scss';
+
+.Avatar {
+
+  .border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 50px 40px;
+
+    &.different {
+      border: none;
+      padding: 5px 10px;
+    }
+
+    input {
+      width: 0.1;
+      height: 0.1;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  .preview {
+    display: flex;
+    justify-content: center;
+    position: relative
+  }
+
+  .label {
+    font-size: 1em;
+    color: white;
+    display: 'inline-block';
+    font-family: $fontFamily;
+    margin: 5px 0;
+    cursor: pointer;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    svg {
+      padding: 5px 10px 0 20px;
+    }
+  }
+}

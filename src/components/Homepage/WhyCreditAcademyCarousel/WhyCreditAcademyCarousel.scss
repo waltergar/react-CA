@@ -1,0 +1,73 @@
+@import '../../../styles/_colors.scss';
+
+.WhyCreditAcademyCarousel {
+  text-align: center;
+
+  .title { color: $niceBlue }
+  .subtitle { margin-bottom: 110px }
+
+  .header {
+    font-size: 28px;
+    letter-spacing: .75px;
+    margin-bottom: 10px;
+    color: $blueGrey;
+  }
+
+  .value {
+    font-size: 24px;
+    ;
+    letter-spacing: .75px;
+  }
+
+  .carouselSection {
+    display: flex;
+    align-items: center;
+  }
+
+  .carouselItem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @media (min-width: 992px) { flex-direction: row }
+
+    .content {
+      text-align: left;
+      @media (min-width: 992px) { margin: 0 0 0 50px }
+    }
+  }
+
+  .carouselToggle {
+    margin-left: 0px;
+    @media (min-width: 992px) { margin-left: 100px }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      border: 1px solid transparent;
+      height: 25px;
+      width: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $blueGrey;
+      opacity: .7;
+      transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+
+    .selected {
+      border: 1px solid $blueGrey;
+      border-radius: 50px;
+      opacity: 1;
+    }
+  }
+}

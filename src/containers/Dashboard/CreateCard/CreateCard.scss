@@ -1,0 +1,203 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_fonts.scss';
+
+.CreateCard {
+  background-color: $blueGrey;
+  min-height: calc(100vh - 110px);
+
+  .header {
+    text-align: center;
+
+    h1 { color: white}
+    p { color: white}
+  }
+
+  .textbox {
+    margin-top: 10px;
+  }
+
+  .buttonGroup {
+    margin-top: 30px;
+
+    button {
+      margin: 0 10px 10px;
+    }
+  }
+
+  .confirmButtonGroup {
+    margin-top: 30px;
+    text-align: right;
+
+    button {
+      margin: 0 10px 10px;
+      @media (max-width: 768px) { width: 120px }
+    }
+  }
+}
+
+.SelectADesign {
+  .cardRow {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardContainer {
+    position: relative;
+
+    input[type=file] { 
+      visibility: hidden;
+      position: absolute
+    }
+
+    .uploadPhoto {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      padding: 50px 40px;
+      margin: 30px 0;
+      border: 2px solid $white;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &.different {
+        border: none;
+        padding: 5px 10px;
+        margin: 5px 0;
+      }
+
+      .icon { padding: 10px }
+    }
+
+    img {
+      width: 320px;
+    }
+
+    .selected {
+      border: 2px solid white;
+    }
+
+    .checked {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 32px;
+      width: 32px;
+      background: white;
+      border-radius: 100%;
+      position: absolute;
+      z-index: 1;
+      right: 40px;
+      top: 25px;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.plaidContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 50px 0;
+
+  p { color: white }
+  button { margin-left: 10px }
+}
+
+.Confirmation {
+  h1, h3 {
+    text-align: center;
+    color: white;
+  }
+  // p { color: white }
+
+  .childDetails {
+    .row {
+      padding: 15px;
+    }
+    .title {
+      width: 30%;
+      color: $white;
+      float: left;
+      text-align: right;
+    }
+    .value {
+      color: white;
+      text-transform: capitalize;
+    }
+  }
+
+  .cardDetails {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 35px 0 0;
+
+    .creditLimitLabel {
+      color: white;
+      ;
+      font-size: 18px;
+    }
+
+    .creditLimit {
+      font-family: $fontFamily;
+      font-size: 36px;
+      ;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.28;
+      letter-spacing: normal;
+      color: white;
+      margin: 0 0 15px;
+    }
+
+    p {
+      width: 50%
+    }
+  }
+
+  .disclaimer {
+    display: flex;
+    justify-content: center;
+
+    p {
+      // width: 50%;
+      font-size: 12px;
+      ;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.67;
+      letter-spacing: 0.4px;
+      color: $white;
+    }
+  }
+}
+
+.white {
+  color: white;
+  text-align: center;
+  margin: 15px 0 75px;
+}
+
+.activateContent {
+  color: white;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 20px;
+  // white-space: pre-line;
+}
+
+.cancelButton {
+  font-size: 14px!important;
+}

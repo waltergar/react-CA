@@ -1,0 +1,12 @@
+@import '../../styles/_colors.scss';
+
+.PrivacyContent {
+  padding: 100px 0;
+  background: white;
+
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    @media (min-width: 768px) { font-size: 36px; }
+  }
+}

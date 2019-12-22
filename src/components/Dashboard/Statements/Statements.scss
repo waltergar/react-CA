@@ -1,0 +1,26 @@
+@import '../../../styles/_colors.scss';
+.statements {
+    padding: 0 20px;
+    p {
+        color: $primaryTextColor;
+        font-size: 16px;
+    }
+
+    .year {
+        font-weight: 700;
+    }
+    
+    .rowWrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 350px;
+    }
+
+    .button {
+        color: $primaryTextColor;
+        font-size: 16px;
+        margin: 0 0 10px 0;
+        height: auto;
+        font-weight: 400;
+    }
+}

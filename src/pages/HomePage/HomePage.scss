@@ -1,0 +1,138 @@
+@import '../../styles/_colors.scss';
+
+.HomePage {
+  .mobileNavLink {
+    margin-top: 20px;
+  }
+
+  .disclaimer {
+    button {
+      color: $coralPink;
+      font-size: 18px;
+    }
+  }
+
+  .pageNav {
+    button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+      letter-spacing: .5px;
+      ;
+      line-height: 50px;
+    }
+
+    .arrowButton {
+      padding: 10px 12px;
+
+      svg > g { stroke: $coralPink }
+    }
+
+    &.left {
+      bottom: 160px;
+      left: 0;
+      float: left;
+      z-index: 20;
+      cursor: pointer;
+
+      @media (min-width: 768px) {
+        position: fixed;
+        transform: rotate(-90deg)
+      }
+      .arrowButton {
+        svg { transform: rotate(-180deg) }
+        @media (min-width: 768px) { svg { transform: rotate(-90deg) } }
+      }
+    }
+
+    &.right {
+      bottom: 195px;
+      z-index: 20;
+      text-align: right;
+      cursor: pointer;
+
+      @media (min-width: 768px) {
+        position: fixed;
+        transform: rotate(-90deg)
+      }
+      .arrowButton {
+        @media (min-width: 768px) { svg { transform: rotate(90deg) } }
+      }
+    }
+
+    &.pink button { color: $coralPink }
+  }
+
+  .contentAndCTA {
+    background-color: $white;
+    &.white { background-color: white }
+
+    .section {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      min-height: calc(100vh - 260px);
+      text-align: center;
+      @media (max-width: 768px) {
+        padding: 70px 0;
+      }
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+
+      .inlineVector {
+        height: 100px;
+        svg { height: 100px; width: 100px }
+        @media (max-width: 768px) { margin-top: 50px; }
+      }
+      .earnStickerIcon {
+        width: 100px;
+        height: 100px;
+        @media (max-width: 768px) { margin-top: 50px; }
+      }
+      .earnACreditStore {
+        @media (max-width: 768px) { margin-top: 50px; }
+      }
+    }
+
+    .header {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+        
+      @media (min-width: 768px) {
+        font-size: 36px;
+      }
+    }
+
+    .text {
+      font-size: 24px;
+      letter-spacing: .75px;
+      ;
+      line-height: 1.29;
+      text-align: center;
+      color: $darkBlueGrey;
+      margin-top: 25px;
+    }
+
+    .button {
+      margin-top: 50px;
+      z-index: 2;
+      position: relative;
+    }
+  }
+}
+
+.ourMissionContent {
+  font-size: 28px;
+  ;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  color: $blueGrey;
+}

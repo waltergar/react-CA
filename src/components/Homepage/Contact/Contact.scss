@@ -1,0 +1,19 @@
+@import '../../../styles/_colors.scss';
+
+.Contact {
+  text-align: center;
+  padding-top: 150px !important;
+
+  :global {
+    .mui-row {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+
+  h1 { color: $white }
+  p { color: $white }
+}

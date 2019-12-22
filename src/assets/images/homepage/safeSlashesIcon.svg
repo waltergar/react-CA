@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="221" viewBox="0 0 260 221">
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#FD5C63" stroke-width="2" d="M103 213.495l5.665 5.505 12.35-12"/>
+        <path stroke="#5D6B81" stroke-linecap="square" d="M122.451 218.5h45.134"/>
+        <path stroke="#FD5C63" stroke-width="2" d="M189 51.871L193.088 56 202 47M189 64.871L193.088 69 202 60"/>
+        <path stroke="#5D6B81" stroke-linecap="square" d="M204.33 53h26.34M204.333 65h33.36"/>
+        <path stroke="#FD5C63" d="M23 45.248L26.145 48 33 42M23 57.248L26.145 60 33 54M23 71.248L26.145 74 33 68"/>
+        <path stroke="#5D6B81" stroke-linecap="square" d="M37.245 46.5h24.53M37.243 58h33.41M37.239 71h15.429"/>
+        <g stroke="#5D6B81" stroke-linecap="square" stroke-width="2">
+            <path d="M169.5 141.5l11 11M180.5 141.5l-11 11"/>
+        </g>
+        <g stroke="#5D6B81" stroke-linecap="square">
+            <path d="M14.5 113.837l11 11M25.5 113.837l-11 11"/>
+        </g>
+        <g stroke="#FD5C63" stroke-linecap="square">
+            <path d="M134 26l46-25"/>
+        </g>
+        <g stroke="#FD5C63" stroke-linecap="square">
+            <path d="M168 193l61-33"/>
+        </g>
+        <g stroke="#FD5C63" stroke-linecap="square" stroke-width="2">
+            <path d="M2 191l47-25"/>
+        </g>
+        <g stroke="#FD5C63" stroke-linecap="square" stroke-width="2">
+            <path d="M199 119l59-31"/>
+        </g>
+        <g transform="translate(48 42)">
+            <path stroke="#5D6B81" stroke-width="3" d="M69.5 31.5v75.007M52.39 114h33.388v8.32H105V132H34v-9.133"/>
+            <path stroke="#FD5C63" stroke-width="4" d="M0 82c0 14.912 11.864 27 26.5 27S53 96.912 53 82M87 51c0 14.912 11.864 27 26.5 27S140 65.912 140 51"/>
+            <path stroke="#5D6B81" stroke-width="3" d="M19 40.663L121.21.772"/>
+            <path stroke="#5D6B81" d="M3 79l23-37 23 37M89 46l7.586-12.203 7.542-12.133L112 9l23 37"/>
+            <circle cx="69" cy="21" r="5" fill="#FFF" stroke="#5D6B81" stroke-width="3"/>
+        </g>
+    </g>
+</svg>

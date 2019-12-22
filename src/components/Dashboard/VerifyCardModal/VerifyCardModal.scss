@@ -1,0 +1,52 @@
+@import '../../../styles/_colors.scss';
+
+.CardDetailsModal {
+  .card { margin: -100px auto 40px }
+  .buttonGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .button {
+      margin: 0 10px
+    }
+
+    .pay {
+      position: relative;
+      color: white;
+      span {
+        position: absolute;
+        right: 20px;
+        svg > path { stroke: $coralPink }
+      }
+    }
+  }
+
+  .textbox {
+    padding: 5px 10px;
+    margin: 25px 0;
+    box-shadow: 0px 0px 70px -9px rgba(0, 0, 0, 0.15)
+  }
+
+  .errorMessage {
+    font-size: 14px;
+    color: $coralPink;
+    margin-top: 25px;
+  }
+
+  @media (max-width: 768px) {
+    section {
+      padding: 0;
+      transform: scale(.9);
+      margin: 100px 0;
+    }
+  }
+
+  @media (max-width: 667px) {
+    section {
+      padding: 0;
+      transform: scale(.8);
+      margin: 25px 0;
+    }
+  }
+}

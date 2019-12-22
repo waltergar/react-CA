@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="#FFFFFF" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="top-menu-red" transform="translate(-1388.000000, -5.000000)">
+            <g id="Login-White" transform="translate(1322.000000, -4.000000)">
+                <g id="Group-3" transform="translate(67.000000, 10.000000)">
+                    <path d="M4.92871094,16.0374096 C4.92871094,16.6791365 4.92871094,17.3333333 4.92871094,18 C4.92871094,18 4.92871094,18 4.92871094,18 L4.92871094,18 C4.92871094,19.1045695 5.82414144,20 6.92871094,20 L16.9287109,20 C18.0332804,20 18.9287109,19.1045695 18.9287109,18 L18.9287109,2 C18.9287109,0.8954305 18.0332804,0 16.9287109,0 L6.92871094,0 C5.82414144,2.02906125e-16 4.92871094,0.8954305 4.92871094,2 L4.92871094,2 L4.92871094,4.01964424" id="Shape"></path>
+                    <polyline id="Shape" points="8.92871094 14 12.9287109 10 8.92871094 6"></polyline>
+                    <path d="M12.9287109,10 L0,10" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

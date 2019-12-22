@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "credit-academy-react",
+    "staging": "credit-academy-react-staging"
+  }
+}

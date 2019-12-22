@@ -1,0 +1,92 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_fonts.scss';
+
+.Fees {
+  &.transparent {
+    section {
+      background-color: transparent;
+      padding: 0;
+      margin-bottom: 50px;
+    }
+
+    h1 { display: none }
+
+    .row {
+      background: none;
+      box-shadow: none;
+      p { color: white }
+
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+
+  }
+
+  h1 {
+    font-family: $fontFamily;
+    font-size: 36px;
+    ;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.28;
+    letter-spacing: normal;
+    text-align: center;
+    color: $niceBlue;
+  }
+
+  p { text-align: center }
+
+  .row {
+    max-width: 750px;
+    width: 100%;
+    height: 80px;
+    padding: 0 10px;
+    border-radius: 8px;
+    background-color: $white;
+    box-shadow: 0 5px 20px 0 rgba(10, 18, 20, 0.05);
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    @media (min-width: 768px) { padding: 0 50px }
+    &:hover { box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15) }
+
+    .title {
+      width: 80%;
+      p { text-align: left }
+    }
+
+    .amount {
+      width: 20%;
+      p { text-align: right }
+    }
+
+    p {
+      font-family: $fontFamily;
+      font-size: 18px;
+      ;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: left;
+      color: $blueGrey;
+      margin: 0 10px;
+
+      @media (min-width: 768px) { margin: 0 20px }
+
+      &.bold { font-weight: 500 }
+    }
+  }
+
+  .additional {
+    margin: 10px 0;
+    text-align: left;
+    @media (min-width: 768px) { text-align: center }
+  }
+}

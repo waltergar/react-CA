@@ -1,0 +1,50 @@
+@import '../../../styles/_colors.scss';
+
+.Accordion {
+  background: white;
+  padding: 5px 25px;
+  border-radius: 8px;
+  margin-top: 4px;
+  box-shadow: 0 10px 20px 0 rgba(34, 78, 95, 0.05);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  &:hover {
+    box-shadow: 0px 7px 12px rgba(34, 78, 95, 0.15);
+    cursor: pointer;
+  }
+
+  .panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    color: $darkBlueGrey;
+    font-size: 16px;
+    text-align: left;
+
+    .icon {
+      transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+      &.open { transform: rotate(180deg) }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    @media (min-width: 768px) { padding: 0 50px 30px; }
+    &.open { padding: 0 20px; }
+    .contentItem {
+      font-size: 16px;
+      ;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: $blueGrey;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import '../../../styles/_fonts.scss';
+
+.GreyArrow {
+  display: flex;
+  justify-content: center;
+  height: 0;
+  animation: GreyArrowDown 2s infinite;
+}
+
+.learnMore {
+  position: relative;
+  bottom: 70px;
+  height: 0;
+
+  p {
+    font-family: $fontFamily;
+    font-size: 14px;
+    ;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  path { stroke: white }
+}
+
+@keyframes GreyArrowDown {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(0, 10px);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+}

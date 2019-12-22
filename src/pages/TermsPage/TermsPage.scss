@@ -1,0 +1,14 @@
+@import '../../styles/_colors.scss';
+
+.TermsPage {
+  .ContentPage {
+    min-height: calc(100vh - 190px);
+    background: white;
+  
+    .header {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.JoinWaitlist {
+  .button {
+    margin-top: 50px
+  }
+
+}
+
+.SuccessModal {
+  .content {
+    text-align: center;
+    padding: 25px 0;
+    position: relative;
+
+    p { font-size: 16px !important }
+
+    .buttonContainer {
+      position: absolute;
+      bottom: -85px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .mobileButton {
+      margin-top: 0;
+      line-height: 0px;
+    }
+  }
+}

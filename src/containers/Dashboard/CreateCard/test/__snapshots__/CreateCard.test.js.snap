@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreateCard /> renders correctly 1`] = `
+<div
+  className="CreateCard"
+>
+  <Section
+    background=""
+    className=""
+    containerRealStyle={Object {}}
+    fluid={false}
+    nomargin={false}
+    onClick={null}
+    rounded={false}
+    singleColumn={false}
+  >
+    <Row
+      className="header"
+    >
+      <Col
+        className=""
+        lg={null}
+        lg-offset={null}
+        md="12"
+        md-offset={null}
+        sm={null}
+        sm-offset={null}
+        xl={null}
+        xl-offset={null}
+        xs={null}
+        xs-offset={null}
+      >
+        <h1 />
+        <p>
+          Enter your teen’s information
+        </p>
+        <p>
+          Step 
+          1
+           of 
+          4
+        </p>
+      </Col>
+    </Row>
+    <Connect(Connect(CreateSubCard))
+      handleBeforeFileLoad={[Function]}
+      handleChangeStep={[Function]}
+      step={1}
+    />
+  </Section>
+</div>
+`;
