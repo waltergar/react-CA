@@ -56,7 +56,7 @@
     "jest-fetch-mock": "^1.6.5",
     "jsdom": "^11.6.2",
     "konva": "2.5.1",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.19",
     "muicss": "^0.9.36",
     "natural-sort": "^1.0.0",
     "node-sass": "^4.7.2",
