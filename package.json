@@ -59,7 +59,7 @@
     "lodash": "^4.17.10",
     "muicss": "^0.9.36",
     "natural-sort": "^1.0.0",
-    "node-sass": "^4.7.2",
+    "node-sass": "^7.0.0",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.8",
