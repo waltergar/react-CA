@@ -54,7 +54,7 @@
     "jest-context": "^2.1.0",
     "jest-enzyme": "^6.0.4",
     "jest-fetch-mock": "^1.6.5",
-    "jsdom": "^11.6.2",
+    "jsdom": "^16.5.0",
     "konva": "2.5.1",
     "lodash": "^4.17.10",
     "muicss": "^0.9.36",
